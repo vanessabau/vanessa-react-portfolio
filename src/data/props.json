@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "name": "Color Changing UI",
+    "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/colorChange.png",
+    "description": "Web developer portfolio with user-interactive, color-changing options",
+    "tech": "HTML, CSS, Javascript",
+    "href": "https://vanessabau.github.io/vanessaro/",
+    "github": "https://github.com/vanessabau/vanessaro"
+  },
+  {
+    "id": 2,
+    "name": "Organize",
+    "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/src/components/Images/organize.png",
+    "description": "MERN stack web application for organizing local activism",
+    "tech": "MERN stack, fullcalendar, bcryptjs, JSON web token, shields.io",
+    "href": "https://organize-demo.herokuapp.com/",
+    "github": "https://github.com/vanessabau/Organize2.0"
+  },
+  {
+    "id": 3,
+    "name": "Beyond Vacation",
+    "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/camping.png",
+    "description": "Full-stack out-door vacation listing and rental application for a socially-distancing era",
+    "tech": "HTML, CSS, Javascript, Node, MySQL, MVC Pattern, Express Handlebars, Sequelize, req-flash, passport, shields.io, Bootstrap",
+    "href": "https://beyondvacation.herokuapp.com/",
+    "github": "https://github.com/vanessabau/projectTwo"
+  },
+
+  {
+    "id": 4,
+    "name": "Identity Coffees",
+    "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/coffee.jpg",
+    "description": "Informational website for local coffee company",
+    "tech": "HTML, CSS, Javascript, Bootstrap",
+    "href": "https://identitycoffees.herokuapp.com/",
+    "github": "https://github.com/vanessabau/identitycoffees"
+  },
+  {
+    "id": 5,
+    "name": "Booksearch",
+    "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/booksearch.png",
+    "description": "MERN stack booksearch application to search for titles, select from results, and save to a list",
+    "tech": "MERN stack, google books api, axios, Atlas, ES6",
+    "href": "https://bk-search-react.herokuapp.com/",
+    "github": "https://github.com/vanessabau/booksearch"
+  },
+  {
+    "id": 6,
+    "name": "YouTube Search",
+    "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/netflix-chill.jpg",
+    "description": "React YouTube video search allowing users to lookup content by search term",
+    "tech": "HTML, CSS, Javascript, JSX, CSS Grid, YoutTube API, React, Node",
+    "href": "https://jovial-jennings-b62f24.netlify.app/",
+    "github": "https://github.com/vanessabau/react-video-search-netlify"
+  },
+  {
+    "id": 7,
+    "name": "Employee Directory",
+    "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/Employee.png",
+    "description": "Employee directory that allows users to view, filter, and sort a list of employees",
+    "tech": "React, Express, MySQL, Lodash, Bootstrap",
+    "href": "https://dm-employeedirectory.herokuapp.com/",
+    "github": "https://github.com/vanessabau/EmployeeDirectory"
+  },
+  {
+    "id": 8,
+    "name": "Budget Tracker (PWA)",
+    "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/budget.png",
+    "description": "Budget tracker that works on and off-line",
+    "tech": "HTML, CSS, Javascript, MongoDB, Atlas",
+    "href": "https://budgettrackpwa.herokuapp.com/",
+    "github": "https://github.com/vanessabau/budgetTrackerPWA"
+  },
+
+  {
+    "id": 9,
+    "name": "Daily Forecast",
+    "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/weather.jpg",
+    "description": "Application to look up national weather data, Ajax, open weather map api, moment.js, bootstrap",
+    "tech": "HTML, CSS, Javascript",
+    "href": "https://vanessabau.github.io/WeatherApp/",
+    "github": "https://github.com/vanessabau/WeatherApp"
+  },
+  {
+    "id": 10,
+    "name": "Movie Streaming and Food Delivery",
+    "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/netflix-chill.jpg",
+    "description": "(in progress) Pair dinner and a movie while socially distancing",
+    "tech": "HTML, CSS, Javascript, Flexbox, Ajax, JQuery, API's: Utelly, Zomato, OMDB, City Geo",
+    "href": "https://vanessabau.github.io/netflix-and-chilies/",
+    "github": "https://github.com/vanessabau/netflix-and-chilies"
+  },
+
+  {
+    "id": 11,
+    "name": "Fitness Tracker",
+    "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/fitnesstracker.png",
+    "description": "Fitness tracker that stores workout data to help users reach their fitness goals",
+    "tech": "HTML, Javascript, MongoDB, Atlas",
+    "href": "https://fitness-tracker-mgo.herokuapp.com/?id=5f6c0b1d10e5130017ec480d",
+    "github": "https://github.com/vanessabau/FitnessTracker"
+  },
+  {
+    "id": 12,
+    "name": "Burger Chomper",
+    "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/hambureger-blue.jpg",
+    "description": "Hamburger logger application",
+    "tech": "Javascript, Node.js, Express, Handlebars, MySQL, MVC Format",
+    "href": "https://secret-badlands-96357.herokuapp.com/",
+    "github": "https://github.com/vanessabau/BurgerMaster"
+  },
+
+  {
+    "id": 13,
+    "name": "Work Day Scheduler",
+    "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/calendar1.jpg",
+    "description": "Daily calendar that allows users to add, store, and delete tasks in 1-hour blocks",
+    "tech": "HTML, CSS, Bootstrap, JQuery, minute.js, Javascript",
+    "href": "https://vanessabau.github.io/Day-planner/",
+    "github": "https://github.com/vanessabau/Day-planner"
+  },
+
+  {
+    "id": 14,
+    "name": "Javascript Quiz",
+    "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/Javascript-game.jpg",
+    "description": "Multiple choice Javascript quiz",
+    "tech": "HTML, CSS, Javascript",
+    "href": "https://vanessabau.github.io/Javascript-quiz/",
+    "github": "https://github.com/vanessabau/Javascript-quiz"
+  },
+  {
+    "id": 15,
+    "name": "Letter Guessing Game",
+    "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/word-game.jpg",
+    "description": "Basic letter guessing game",
+    "tech": "HTML, CSS, Javascript",
+    "href": "https://vanessabau.github.io/Psychic-Game/",
+    "github": "https://github.com/vanessabau/Psychic-Game"
+  }
+]

@@ -1,0 +1,29 @@
+#contact-intro-wrapper {
+    display: grid;
+    border: 1px solid var(--borderColor);
+    border-radius: 5px 5px 0 0;
+}
+#connect-background-img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    border: 1px var(--borderColor);
+    border-radius: 5px 5px 0 0;
+}
+.content-wrapper {
+    position: absolute;
+    z-index: 9;
+    overflow: auto;
+}
+#reach-out {
+    margin-top: 20px;
+    margin-left: 110px;
+    position: relative;
+    overflow: auto;
+}
+.contact {
+    margin-top: 20px;
+    margin-left: 75px;
+    position: relative;
+    overflow: auto;
+}

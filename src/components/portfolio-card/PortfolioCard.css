@@ -1,0 +1,86 @@
+.card {
+    background: #fff;
+    border-radius: 2px;
+    margin: 1rem;
+    width: 300px;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    text-align: left;
+}
+
+.card-body {
+    min-height: 300px;
+}
+#description {
+    font-size: 14px;
+}
+#tech {
+    font-size: 10px;
+}
+
+#btn-deploy {
+    margin-right: 0.4rem;
+}
+
+@media screen and (max-width: 320px) {
+    .card {
+        width: 280px;
+        margin: auto;
+    }
+
+    .card-body {
+        width: 280px;
+    }
+}
+
+/* .card {
+  background: #fff;
+  border-radius: 2px;
+  height: 325px;
+  margin: 1rem;
+  position: relative;
+  width: 325px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  text-align: left;
+}
+
+.card > .img-container {
+  height: 60%;
+  overflow: hidden;
+  text-align: center;
+  background: #6caddc;
+}
+.card > .img-container > img {
+  width: 60%;
+}
+
+.card > .content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 15px;
+}
+
+.card > .content > ul {
+  list-style-type: none;
+}
+
+.card > .content > ul > li {
+  margin-top: 18px;
+}
+
+.github-link {
+  text-align: center;
+  background: #fff;
+  border-radius: 2px;
+  margin: 1rem;
+  position: relative;
+  width: 325px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  cursor: pointer;
+  padding: 1px;
+  border: 1px solid #5bc0de;
+}
+
+#github-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+} */
