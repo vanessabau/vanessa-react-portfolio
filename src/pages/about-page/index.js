@@ -52,7 +52,7 @@ const AboutPage = () => {
               </a>
               <p>
                 <a
-                  href="https://vanessaro-portfolio.herokuapp.com/portfolio"
+                  href="https://vanessa-react-portfolio.vercel.app/portfolio"
                   target="_blank"
                 >
                   View Portfolio
