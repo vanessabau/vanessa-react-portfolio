@@ -24,7 +24,7 @@ React Portfolio featuring web development work by Vanessa Bautista
 
 ### Useage
 
-To use visit the deployed url https://vanessaro-portfolio.herokuapp.com/ . View contact information, current Resume, link to youtube channel, and examples of web development work.
+To use visit the deployed url https://vanessa-react-portfolio.vercel.app/ . View contact information, current Resume, link to youtube channel, and examples of web development work.
 
 ### Technologies Used
 
