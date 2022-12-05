@@ -33,8 +33,8 @@
     "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/coffee.jpg",
     "description": "Informational website for local coffee company",
     "tech": "HTML, CSS, Javascript, Bootstrap",
-    "href": "https://identitycoffees.herokuapp.com/",
-    "github": "https://github.com/vanessabau/identitycoffees"
+    "href": "https://identity-coffee.vercel.app/",
+    "github": "https://github.com/vanessabau/identity-coffee"
   },
   {
     "id": 5,
