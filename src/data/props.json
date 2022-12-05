@@ -60,8 +60,8 @@
     "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/Employee.png",
     "description": "Employee directory that allows users to view, filter, and sort a list of employees",
     "tech": "React, Express, MySQL, Lodash, Bootstrap",
-    "href": "https://dm-employeedirectory.herokuapp.com/",
-    "github": "https://github.com/vanessabau/EmployeeDirectory"
+    "href": "https://employee-directory-react-vanessabau.vercel.app/",
+    "github": "https://github.com/vanessabau/employee-directory-react"
   },
   {
     "id": 8,
