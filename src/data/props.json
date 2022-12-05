@@ -98,7 +98,7 @@
     "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/fitnesstracker.png",
     "description": "Fitness tracker that stores workout data to help users reach their fitness goals",
     "tech": "HTML, Javascript, MongoDB, Atlas",
-    "href": "https://fitness-tracker-mgo.herokuapp.com/?id=5f6c0b1d10e5130017ec480d",
+    "href": "https://fitness-tracker-vanessabau.vercel.app/",
     "github": "https://github.com/vanessabau/FitnessTracker"
   },
   {
