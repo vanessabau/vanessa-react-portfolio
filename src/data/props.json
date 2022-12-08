@@ -42,8 +42,8 @@
     "image": "https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/booksearch.png",
     "description": "MERN stack booksearch application to search for titles, select from results, and save to a list",
     "tech": "MERN stack, google books api, axios, Atlas, ES6",
-    "href": "https://bk-search-react.herokuapp.com/",
-    "github": "https://github.com/vanessabau/booksearch"
+    "href": "https://vercel-booksearch.vercel.app/",
+    "github": "https://github.com/vanessabau/vercel-booksearch"
   },
   {
     "id": 6,
