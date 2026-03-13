@@ -8,5 +8,5 @@ test('renders profile image with accessible alt text', () => {
 
 test('profile image has correct id', () => {
   render(<BioPic />);
-  expect(document.getElementById('profile_pic')).toBeInTheDocument();
+  expect(document.getElementById('profile-pic')).toBeInTheDocument();
 });

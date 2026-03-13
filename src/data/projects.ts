@@ -1,17 +1,17 @@
 import type { Project } from "../types";
-import colorChange from "../assets/images/colorChange.png";
+import colorChange from "../assets/images/color-change.png";
 import organize from "../assets/images/awesome2.png";
 import camping from "../assets/images/camping.png";
 import coffee from "../assets/images/coffee.jpg";
 import booksearch from "../assets/images/booksearch.png";
 import netflixChill from "../assets/images/netflix-chill.jpg";
-import employee from "../assets/images/Employee.png";
+import employee from "../assets/images/employee.png";
 import budget from "../assets/images/budget.png";
 import weather from "../assets/images/weather.jpg";
-import fitnesstracker from "../assets/images/fitnesstracker.png";
-import hamburger from "../assets/images/hambureger-blue.jpg";
+import fitnesstracker from "../assets/images/fitness-tracker.png";
+import hamburger from "../assets/images/hamburger-blue.jpg";
 import calendar from "../assets/images/calendar1.jpg";
-import javascriptGame from "../assets/images/Javascript-game.jpg";
+import javascriptGame from "../assets/images/javascript-game.jpg";
 import wordGame from "../assets/images/word-game.jpg";
 
 const projects: Project[] = [

@@ -6,7 +6,7 @@ const BioPic = () => {
       <div>
         <div className="preview-shadow">
           <div className="preview-content">
-            <img id="profile_pic" src={Vbio2} alt="Vanessa Bautista" />
+            <img id="profile-pic" src={Vbio2} alt="Vanessa Bautista" />
             <div className="corner corner--tl"></div>
             <div className="corner corner--tr"></div>
 

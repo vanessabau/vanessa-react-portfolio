@@ -1,8 +1,8 @@
 import clsx from "clsx";
-import ConnectBk from "../../assets/images/connectBk.png";
+import ConnectBk from "../../assets/images/connect-bk.png";
 import styles from "./Contact.module.css";
 
-const Contact = () => {
+const ContactPage = () => {
   return (
     <section className="s1" aria-labelledby="connect-heading">
       <div className="main-container">
@@ -50,4 +50,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;

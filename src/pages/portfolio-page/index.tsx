@@ -3,7 +3,7 @@ import PortfolioCard from "../../components/portfolio-card";
 import projects from "../../data/projects";
 import styles from "./Portfolio.module.css";
 
-const Portfolio = () => (
+const PortfolioPage = () => (
   <section className="s1" aria-labelledby="portfolio-title">
     <div className="main-container">
       <div className="greeting-wrapper">
@@ -18,4 +18,4 @@ const Portfolio = () => (
   </section>
 );
 
-export default Portfolio;
+export default PortfolioPage;
