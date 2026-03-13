@@ -1,43 +1,52 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Vanessa Bautista React Portfolio
 
-# README Vanessa Bautista React Portfolio
+React Portfolio featuring web development work by Vanessa Bautista.
 
-React Portfolio featuring web development work by Vanessa Bautista
+![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)
 
-# ![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)
+**Live site:** https://vanessa-react-portfolio.vercel.app/
 
-## GITHUB USER: vanessabau
+---
 
-## DEVELOPER EMAIL: vanessawebdev@gmail.com
+## Getting Started
 
-# ![reactportfolio](https://raw.githubusercontent.com/vanessabau/react-gh-portfolio/master/public/images/Vanessa-React-Portfolio.png)
+### Prerequisites
 
-## TABLE OF CONTENTS
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- npm (comes with Node.js)
 
-1. [Useage](###Useage)
-2. [Technologies](###Licensing)
-3. [Contributors](###Contributors)
-4. [Tests](###Testing)
-5. [Questions](###Questions)
+### Installation
 
-## CONTENT
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/vanessabau/vanessa-react-portfolio.git
+   ```
 
-### Useage
+2. Navigate into the project directory:
+   ```bash
+   cd vanessa-react-portfolio
+   ```
 
-To use visit the deployed url https://vanessa-react-portfolio.vercel.app/ . View contact information, current Resume, link to youtube channel, and examples of web development work.
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### Technologies Used
+### Running the App
 
-VS Code, ES6, React, React Router, Node.js, Express, Heroku, Git
+```bash
+npm start
+```
 
-### Contributors
+Once running, open your browser and go to [http://localhost:5173](http://localhost:5173) to view the app.
 
-None
+---
 
-### Testing
+## Technologies Used
 
-Currently no tests are available.
+React, React Router, Node.js, JavaScript (ES6), CSS, Git
 
-### Questions
+## Contact
 
-None
+- **GitHub:** [vanessabau](https://github.com/vanessabau)
+- **Email:** vanessawebdev@gmail.com
