@@ -12,7 +12,7 @@ React Portfolio featuring web development work by Vanessa Bautista.
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v18 or higher)
+- [Node.js](https://nodejs.org/) (v20 or higher)
 - npm (comes with Node.js)
 
 ### Installation
