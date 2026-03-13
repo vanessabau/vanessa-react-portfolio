@@ -29,22 +29,22 @@ const AboutPage = () => {
             <div className="about-me">
               <h2 id="about-me-heading">About Me</h2>
               <p>
-                With grit and determination I have forged careers in the Visual
-                and Performing Arts, Marketing, and as a Restaurateur, learning
-                these industries from the ground up. I am known for being
-                passionate and dedicated in all I do, and am always ready to
-                roll up my sleeves and find a creative solution to the challenge
-                at hand.
+                Front End Platform Engineer with 5+ years of experience building
+                and scaling enterprise web applications at lululemon. Expert in
+                micro-frontend architecture, module federation, and React/Next.js
+                platforms — delivering large-scale migrations, observability
+                systems, and performance optimizations across 20+ engineering
+                teams.
               </p>
               <p>
-                Recently I shifted gears towards web development where my hunger
-                for learning, logic, and creativity thrives. I bring forward the
-                insight and skills learned from previous experiences with
-                dutiful application to the world of web development.
+                I'm a technical leader who mentors engineers, drives Communities
+                of Practice, and builds AI-powered developer tooling. I take
+                end-to-end ownership of complex cross-stack initiatives with
+                measurable business impact — from reducing page load times by 39%
+                to stabilizing mission-critical applications to 95% uptime.
               </p>
               <hr />
-              <h3>Full Stack Awesomeness</h3>
-              <p>Let's get this party started</p>
+              <h3>Core Competencies</h3>
               <a href="/vanessaBau-resume.pdf" target="_blank" rel="noreferrer">
                 View Resume
               </a>
@@ -53,24 +53,24 @@ const AboutPage = () => {
               </p>
               <div id="skills" aria-label="Technical skills">
                 <ul role="list">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>ES6</li>
+                  <li>React</li>
+                  <li>TypeScript</li>
                   <li>JavaScript</li>
-                  <li>Bootstrap</li>
-                  <li>Node</li>
-                  <li>Express</li>
-                  <li>Git</li>
+                  <li>Next.js</li>
+                  <li>Node.js</li>
+                  <li>Module Federation</li>
+                  <li>Micro-Frontend Architecture</li>
+                  <li>Webpack / RushJS</li>
                 </ul>
                 <ul role="list">
-                  <li>React</li>
-                  <li>React-Testing-Library</li>
-                  <li>Jest</li>
-                  <li>React Native</li>
-                  <li>Sequelize/MySQL</li>
-                  <li>MongoDB/Mongoose</li>
-                  <li>Progressive Web Apps</li>
-                  <li>GitHub/Vercel</li>
+                  <li>AWS (Lambda, CloudWatch, S3)</li>
+                  <li>Datadog</li>
+                  <li>Akamai CDN</li>
+                  <li>CI/CD (GitLab)</li>
+                  <li>Terraform</li>
+                  <li>Storybook</li>
+                  <li>Contentful</li>
+                  <li>GitHub Copilot Agents</li>
                 </ul>
               </div>
             </div>

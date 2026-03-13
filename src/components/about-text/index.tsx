@@ -7,11 +7,11 @@ const AboutText = () => {
             <div className="corner corner--tl"></div>
             <div className="corner corner--tr"></div>
 
-            <h2 className="preview-header">Full Stack Awesomeness</h2>
+            <h2 className="preview-header">Front End Platform Engineer</h2>
             <p className="preview-text">
-              Can-do on steroids. <br />
-              I love to build web applications. <br />
-              Let me build one for you.
+              5+ years building enterprise web at scale. <br />
+              Micro-frontends, design systems, observability. <br />
+              Based in California.
             </p>
 
             <div className="corner corner--br"></div>
