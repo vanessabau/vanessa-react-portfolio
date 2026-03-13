@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import NavTabs from "../nav-tabs/index";
 import AboutPage from "../../pages/about-page/index";
@@ -12,9 +12,11 @@ const Navbar = () => {
       <Router>
         <div>
           <NavTabs />
-          <Route exact path="/" component={AboutPage} />
-          <Route exact path="/portfolio" component={PortfolioPage} />
-          <Route path="/contact" component={ContactPage} />
+          <Routes>
+            <Route path="/" element={<AboutPage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
         </div>
       </Router>
     </>
