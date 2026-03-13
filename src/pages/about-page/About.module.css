@@ -1,0 +1,46 @@
+.aboutIntroWrapper {
+    background-color: var(--secondaryColor);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30em;
+    grid-template-areas: "left-column right-column";
+    padding-left: 100px;
+}
+
+.leftColumn {
+    grid-area: left-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.rightColumn {
+    grid-area: right-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .aboutIntroWrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 30em;
+        grid-template-areas:
+            "left-column"
+            "right-column";
+        padding-left: 50px;
+    }
+    .leftColumn {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .rightColumn {
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .aboutIntroWrapper {
+        grid-template-rows: 20em;
+        padding-left: 50px;
+    }
+}
