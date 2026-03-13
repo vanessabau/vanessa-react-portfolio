@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
+import clsx from "clsx";
 import BioPic from "../../components/bio-pic/index";
 import AboutText from "../../components/about-text/index";
-
-import "./About.css";
+import styles from "./About.module.css";
 
 const AboutPage = () => {
   return (
@@ -11,12 +12,11 @@ const AboutPage = () => {
           <div className="greeting-wrapper" id="welcome-wrapper">
             <h1 id="welcome-heading">Welcome, I'm Vanessa Bautista</h1>
           </div>
-          <div className="intro-wrapper" id="about-intro-wrapper">
-            <div className="left-column">
+          <div className={clsx("intro-wrapper", styles.aboutIntroWrapper)}>
+            <div className={styles.leftColumn}>
               <BioPic />
             </div>
-
-            <div className="right-column">
+            <div className={styles.rightColumn}>
               <AboutText />
             </div>
           </div>
@@ -45,21 +45,11 @@ const AboutPage = () => {
               <hr />
               <h3>Full Stack Awesomeness</h3>
               <p>Let's get this party started</p>
-              <a
-                href="../../vanessaBau-resume.pdf"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="/vanessaBau-resume.pdf" target="_blank" rel="noreferrer">
                 View Resume
               </a>
               <p>
-                <a
-                  href="https://vanessa-react-portfolio.vercel.app/portfolio"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View Portfolio
-                </a>
+                <Link to="/portfolio">View Portfolio</Link>
               </p>
               <div id="skills" aria-label="Technical skills">
                 <ul role="list">
@@ -80,7 +70,7 @@ const AboutPage = () => {
                   <li>Sequelize/MySQL</li>
                   <li>MongoDB/Mongoose</li>
                   <li>Progressive Web Apps</li>
-                  <li>Github/Heroku</li>
+                  <li>GitHub/Vercel</li>
                 </ul>
               </div>
             </div>
@@ -92,11 +82,6 @@ const AboutPage = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img
-                  id="social_img"
-                  src="https://raw.githubusercontent.com/vanessabau/vanessaro/master/images/youtubevro.png"
-                  alt=""
-                />
                 <span>YouTube: Vanessa Bautista</span>
               </a>
             </div>

@@ -1,35 +1,38 @@
 import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import AboutPage from './index';
 
+const renderAboutPage = () => render(<MemoryRouter><AboutPage /></MemoryRouter>);
+
 test('renders welcome heading', () => {
-  render(<AboutPage />);
+  renderAboutPage();
   expect(
     screen.getByRole('heading', { name: "Welcome, I'm Vanessa Bautista", level: 1 })
   ).toBeInTheDocument();
 });
 
 test('renders About Me heading', () => {
-  render(<AboutPage />);
+  renderAboutPage();
   expect(screen.getByRole('heading', { name: 'About Me', level: 2 })).toBeInTheDocument();
 });
 
 test('renders profile picture', () => {
-  render(<AboutPage />);
+  renderAboutPage();
   expect(screen.getByRole('img', { name: 'Vanessa Bautista' })).toBeInTheDocument();
 });
 
 test('renders resume link', () => {
-  render(<AboutPage />);
+  renderAboutPage();
   expect(screen.getByRole('link', { name: 'View Resume' })).toBeInTheDocument();
 });
 
 test('renders portfolio link', () => {
-  render(<AboutPage />);
+  renderAboutPage();
   expect(screen.getByRole('link', { name: 'View Portfolio' })).toBeInTheDocument();
 });
 
 test('renders skills list with key technologies', () => {
-  render(<AboutPage />);
+  renderAboutPage();
   expect(screen.getByText('HTML')).toBeInTheDocument();
   expect(screen.getByText('CSS')).toBeInTheDocument();
   expect(screen.getByText('Node')).toBeInTheDocument();
@@ -38,6 +41,6 @@ test('renders skills list with key technologies', () => {
 });
 
 test('renders YouTube social link', () => {
-  render(<AboutPage />);
+  renderAboutPage();
   expect(screen.getByText('YouTube: Vanessa Bautista')).toBeInTheDocument();
 });

@@ -1,16 +1,18 @@
-import "./PortfolioCard.css";
+import clsx from "clsx";
+import styles from "./PortfolioCard.module.css";
 import type { Project } from "../../types";
 
 function PortfolioCard(props: Project) {
   return (
     <article>
-      <div className="card">
+      <div className={clsx(styles.cardWrapper, "card")}>
         <img
           className="card-img-top"
           src={props.image}
           alt={`Screenshot of ${props.name}`}
+          loading="lazy"
         />
-        <div className="card-body">
+        <div className={clsx(styles.cardBody, "card-body")}>
           <h2 className="card-title">{props.name}</h2>
           <p className="card-text">{props.description}</p>
           <p className="card-text">TECH: {props.tech}</p>

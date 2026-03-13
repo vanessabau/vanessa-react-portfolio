@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/index";
 import Footer from "./components/footer/index";
 import ErrorBoundary from "./components/error-boundary/index";
+import "./default.css";
 
 const AboutPage = lazy(() => import("./pages/about-page/index"));
 const PortfolioPage = lazy(() => import("./pages/portfolio-page/index"));

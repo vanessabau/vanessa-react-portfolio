@@ -1,27 +1,26 @@
 import { Link, useLocation } from "react-router-dom";
+import clsx from "clsx";
 
 const NavTabs = () => {
-  const location = useLocation();
+  const { pathname } = useLocation();
+  const navLink = (path: string) => clsx("nav-link", { active: pathname === path });
 
   return (
     <ul className="nav nav-tabs" id="navigation" role="list">
       <li className="nav-item">
         <Link
           to="/"
-          className={location.pathname === "/" ? "nav-link active" : "nav-link"}
-          aria-current={location.pathname === "/" ? "page" : undefined}
+          className={navLink("/")}
+          aria-current={pathname === "/" ? "page" : undefined}
         >
           About
         </Link>
       </li>
-
       <li className="nav-item">
         <Link
           to="/portfolio"
-          className={
-            location.pathname === "/portfolio" ? "nav-link active" : "nav-link"
-          }
-          aria-current={location.pathname === "/portfolio" ? "page" : undefined}
+          className={navLink("/portfolio")}
+          aria-current={pathname === "/portfolio" ? "page" : undefined}
         >
           Portfolio
         </Link>
@@ -29,10 +28,8 @@ const NavTabs = () => {
       <li className="nav-item">
         <Link
           to="/contact"
-          className={
-            location.pathname === "/contact" ? "nav-link active" : "nav-link"
-          }
-          aria-current={location.pathname === "/contact" ? "page" : undefined}
+          className={navLink("/contact")}
+          aria-current={pathname === "/contact" ? "page" : undefined}
         >
           Contact
         </Link>

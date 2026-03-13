@@ -8,5 +8,5 @@ test('renders footer landmark', () => {
 
 test('renders copyright text', () => {
   render(<Footer />);
-  expect(screen.getByText(/© 2020 Vanessa Ro/)).toBeInTheDocument();
+  expect(screen.getByText(/© \d{4} Vanessa Bautista/)).toBeInTheDocument();
 });

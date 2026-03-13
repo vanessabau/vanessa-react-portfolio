@@ -59,16 +59,52 @@ npm test
 | Language | TypeScript 5 (strict mode) |
 | Build tool | Vite 8 |
 | Test runner | Vitest 4 + React Testing Library |
-| Styles | CSS + Bootstrap 4.3 (CDN) |
+| Styles | CSS Modules + Bootstrap 4.3 (CDN) + clsx |
 | Deployment | Vercel (Node 20, output: `dist`) |
 
 ---
 
 ## Technical Notes
 
+### CSS Modules
+
+Component-specific styles use CSS Modules (`*.module.css`) so class names are scoped and can't leak across components. Bootstrap utility classes from the CDN are applied as plain strings. `clsx` is used whenever both need to be combined:
+
+```tsx
+// Custom module style alongside Bootstrap class
+<div className={clsx(styles.cardWrapper, "card")}>
+
+// Conditional active state in NavTabs
+className={clsx("nav-link", { active: pathname === path })}
+```
+
+Global styles (CSS variables, typography, layout helpers like `.s1`, `.s2`, `.greeting-wrapper`) live in `src/default.css`, imported once in `App.tsx` and processed by Vite.
+
+### Adding a New Project
+
+1. Add the screenshot to `src/assets/images/`
+2. Open `src/data/projects.ts`
+3. Import the image and add an entry to the array:
+
+```ts
+import myProject from "../assets/images/myProject.png";
+
+{
+  id: 16,
+  name: "My Project",
+  image: myProject,
+  description: "What it does",
+  tech: "React, Node, etc.",
+  href: "https://deployed-url.com",
+  github: "https://github.com/vanessabau/repo"
+}
+```
+
+Portfolio tests are data-driven — new entries are automatically covered.
+
 ### TypeScript — strict mode throughout
 
-The entire codebase is TypeScript with `strict: true` and `moduleResolution: bundler`. Portfolio data is typed via a `Project` interface in `src/types/index.ts` and consumed from `src/data/props.json`. This catches shape mismatches between the data file and component props at compile time rather than at runtime.
+The entire codebase is TypeScript with `strict: true` and `moduleResolution: bundler`. Portfolio data is typed via a `Project` interface in `src/types/index.ts` and consumed from `src/data/projects.ts`. All project images are imported directly in that file so Vite can resolve, hash, and bundle them at build time.
 
 ### Accessibility (WCAG)
 
@@ -84,13 +120,13 @@ The entire codebase is TypeScript with `strict: true` and `moduleResolution: bun
 Routes are lazy-loaded via `React.lazy` + `Suspense`. Vite splits each page into its own chunk at build time:
 
 ```
-about-page.js       4.33 kB
-contact-page.js     1.46 kB
-portfolio-page.js   7.07 kB   ← only fetched when visiting /portfolio
-index.js          232.86 kB   ← React + router + shared runtime
+about-page.js       4.27 kB
+contact-page.js     1.68 kB
+portfolio-page.js   5.97 kB   ← only fetched when visiting /portfolio
+index.js          232.53 kB   ← React + router + shared runtime
 ```
 
-A visitor landing on `/contact` never downloads the portfolio page JS.
+A visitor landing on `/contact` never downloads the portfolio page JS. All portfolio card images use `loading="lazy"` so only visible images are fetched on page load.
 
 ### Error boundary
 
@@ -101,7 +137,7 @@ A class-based `ErrorBoundary` (`src/components/error-boundary/`) wraps `<main>` 
 Tests are colocated with their components (e.g. `PortfolioCard.test.tsx` next to `PortfolioCard/index.tsx`). Coverage priorities:
 
 - **Accessibility attributes** — `aria-current`, `aria-label`, landmark roles — not just visual output
-- **Data-driven rendering** — the PortfolioPage tests iterate over the live `props.json`, so adding a new project automatically extends test coverage
+- **Data-driven rendering** — the PortfolioPage tests iterate over the live `projects.ts` data, so adding a new project automatically extends test coverage
 - **Error boundary** — a `ThrowError` component verifies the fallback renders and the `main` landmark is preserved
 - **Route active state** — NavTabs is tested across all three `MemoryRouter` paths to verify `aria-current` is applied correctly
 

@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import Portfolio from './index';
-import projectData from '../../data/props.json';
+import projectData from '../../data/projects';
 
 test('renders Portfolio heading', () => {
   render(<Portfolio />);

@@ -1,5 +1,6 @@
+import clsx from "clsx";
 import ConnectBk from "../../assets/images/connectBk.png";
-import "./Contact.css";
+import styles from "./Contact.module.css";
 
 const Contact = () => {
   return (
@@ -9,18 +10,14 @@ const Contact = () => {
           <h1 id="connect-heading">Connect</h1>
         </div>
 
-        <div className="intro-wrapper" id="contact-intro-wrapper">
-          <img id="connect-background-img" src={ConnectBk} alt="" />
+        <div className={clsx("intro-wrapper", styles.contactIntroWrapper)}>
+          <img className={styles.connectBgImg} src={ConnectBk} alt="" />
 
-          <div className="content-wrapper">
-            <h2 id="reach-out">Reach Out</h2>
-            <ul className="contact" role="list" aria-labelledby="reach-out">
+          <div className={styles.contentWrapper}>
+            <h2 className={styles.reachOut} id="reach-out">Reach Out</h2>
+            <ul className={styles.contactList} role="list" aria-labelledby="reach-out">
               <li>
-                <a
-                  href="../../vanessaBau-resume.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="/vanessaBau-resume.pdf" target="_blank" rel="noreferrer">
                   Resume
                 </a>
               </li>

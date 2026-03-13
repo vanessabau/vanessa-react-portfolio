@@ -1,0 +1,51 @@
+.contactIntroWrapper {
+    display: grid;
+    border: 1px solid var(--borderColor);
+    border-radius: 5px 5px 0 0;
+}
+
+.connectBgImg {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    border: 1px var(--borderColor);
+    border-radius: 5px 5px 0 0;
+}
+
+.contentWrapper {
+    position: absolute;
+    z-index: 9;
+}
+
+.reachOut {
+    margin-top: 20px;
+    margin-left: 110px;
+    position: relative;
+}
+
+.contactList {
+    margin-top: 20px;
+    margin-left: 75px;
+    position: relative;
+}
+
+.contactList li {
+    border-bottom: 1px solid var(--borderColor);
+    padding: 6px 0;
+}
+
+.contactList li:last-child {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 800px) {
+    .contentWrapper {
+        font-size: 12px;
+    }
+    .contactIntroWrapper {
+        height: 350px;
+    }
+    .connectBgImg {
+        height: 350px;
+    }
+}
