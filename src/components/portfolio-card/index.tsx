@@ -1,9 +1,10 @@
 //Dependencies
 import React from "react";
 import "./PortfolioCard.css";
+import type { Project } from "../../types";
 
 //Render portfolio cards with data from props.json
-function PortfolioCard(props) {
+function PortfolioCard(props: Project) {
   return (
     <div>
       <div className="card">

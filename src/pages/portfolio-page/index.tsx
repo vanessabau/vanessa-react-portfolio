@@ -1,12 +1,17 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import PortfolioCard from "../../components/portfolio-card";
-import props from "../../data/props.json";
+import projectData from "../../data/props.json";
+import type { Project } from "../../types";
 import "./Portfolio.css";
 
+interface PortfolioState {
+  projects: Project[];
+}
+
 //Create class component to pass portfolio information from props.json to the portfolio page and render the page. The cards will be rendered through the <PortfolioCard/> component
-class Portfolio extends Component {
-  state = {
-    props,
+class Portfolio extends Component<Record<string, never>, PortfolioState> {
+  state: PortfolioState = {
+    projects: projectData,
   };
 
   render() {
@@ -18,16 +23,16 @@ class Portfolio extends Component {
           </div>
 
           <div className="post-wrapper container">
-            {this.state.props.map((prop) => (
+            {this.state.projects.map((project) => (
               <PortfolioCard
-                id={prop.id}
-                key={prop.id}
-                name={prop.name}
-                image={prop.image}
-                description={prop.description}
-                tech={prop.tech}
-                href={prop.href}
-                github={prop.github}
+                id={project.id}
+                key={project.id}
+                name={project.name}
+                image={project.image}
+                description={project.description}
+                tech={project.tech}
+                href={project.href}
+                github={project.github}
               />
             ))}
           </div>
