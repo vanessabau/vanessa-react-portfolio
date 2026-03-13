@@ -1,5 +1,3 @@
-import React from "react";
-
 import BioPic from "../../components/bio-pic/index";
 import AboutText from "../../components/about-text/index";
 
@@ -8,10 +6,10 @@ import "./About.css";
 const AboutPage = () => {
   return (
     <>
-      <section className="s1">
+      <section className="s1" aria-labelledby="welcome-heading">
         <div className="main-container">
           <div className="greeting-wrapper" id="welcome-wrapper">
-            <h1>Welcome, I'm Vanessa Bautista</h1>
+            <h1 id="welcome-heading">Welcome, I'm Vanessa Bautista</h1>
           </div>
           <div className="intro-wrapper" id="about-intro-wrapper">
             <div className="left-column">
@@ -25,11 +23,11 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section className="s2">
+      <section className="s2" aria-labelledby="about-me-heading">
         <div className="main-container">
           <div className="about-wrapper">
             <div className="about-me">
-              <h4>About Me</h4>
+              <h2 id="about-me-heading">About Me</h2>
               <p>
                 With grit and determination I have forged careers in the Visual
                 and Performing Arts, Marketing, and as a Restaurateur, learning
@@ -45,21 +43,26 @@ const AboutPage = () => {
                 dutiful application to the world of web development.
               </p>
               <hr />
-              <h4>FULL STACK AWESOMENESS</h4>
+              <h3>Full Stack Awesomeness</h3>
               <p>Let's get this party started</p>
-              <a href="../../vanessaBau-resume.pdf" target="_blank">
+              <a
+                href="../../vanessaBau-resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
                 View Resume
               </a>
               <p>
                 <a
                   href="https://vanessa-react-portfolio.vercel.app/portfolio"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   View Portfolio
                 </a>
               </p>
-              <div id="skills">
-                <ul>
+              <div id="skills" aria-label="Technical skills">
+                <ul role="list">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>ES6</li>
@@ -69,7 +72,7 @@ const AboutPage = () => {
                   <li>Express</li>
                   <li>Git</li>
                 </ul>
-                <ul>
+                <ul role="list">
                   <li>React</li>
                   <li>React-Testing-Library</li>
                   <li>Jest</li>
@@ -83,22 +86,18 @@ const AboutPage = () => {
             </div>
 
             <div className="social-links">
+              <h2>Find me on YouTube</h2>
               <a
                 href="https://www.youtube.com/channel/UCJgiKl0JhapfuzCyylGHKbQ?view_as=subscriber"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img
                   id="social_img"
                   src="https://raw.githubusercontent.com/vanessabau/vanessaro/master/images/youtubevro.png"
-                  alt="youtube"
+                  alt=""
                 />
-              </a>
-              <h3>Find me on YouTube</h3>
-              <a
-                target="_blank"
-                href="https://www.youtube.com/channel/UCJgiKl0JhapfuzCyylGHKbQ?view_as=subscriber"
-              >
-                YouTube: Vanessa Bautista
+                <span>YouTube: Vanessa Bautista</span>
               </a>
             </div>
           </div>

@@ -1,23 +1,21 @@
-import React from "react";
-
 const AboutText = () => {
   return (
     <>
       <div>
-        <div id="preview-shadow">
-          <div id="preview">
-            <div id="corner-tl" className="corner"></div>
-            <div id="corner-tr" className="corner"></div>
+        <div className="preview-shadow">
+          <div className="preview-content">
+            <div className="corner corner--tl"></div>
+            <div className="corner corner--tr"></div>
 
-            <h3 id="preview-header">Full Stack Awesomeness</h3>
-            <p id="preview-text">
+            <h2 className="preview-header">Full Stack Awesomeness</h2>
+            <p className="preview-text">
               Can-do on steroids. <br />
               I love to build web applications. <br />
               Let me build one for you.
             </p>
 
-            <div id="corner-br" className="corner"></div>
-            <div id="corner-bl" className="corner"></div>
+            <div className="corner corner--br"></div>
+            <div className="corner corner--bl"></div>
           </div>
         </div>
       </div>

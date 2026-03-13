@@ -1,18 +1,17 @@
-import React from "react";
 import Vbio2 from "./vbio2.jpeg";
 
 const BioPic = () => {
   return (
     <>
       <div>
-        <div id="preview-shadow">
-          <div id="preview">
-            <img id="profile_pic" src={Vbio2} alt="bio_pic" />
-            <div id="corner-tl" className="corner"></div>
-            <div id="corner-tr" className="corner"></div>
+        <div className="preview-shadow">
+          <div className="preview-content">
+            <img id="profile_pic" src={Vbio2} alt="Vanessa Bautista" />
+            <div className="corner corner--tl"></div>
+            <div className="corner corner--tr"></div>
 
-            <div id="corner-br" className="corner"></div>
-            <div id="corner-bl" className="corner"></div>
+            <div className="corner corner--br"></div>
+            <div className="corner corner--bl"></div>
           </div>
         </div>
       </div>

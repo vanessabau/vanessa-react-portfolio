@@ -16,8 +16,10 @@ body {
     padding: 0;
     margin: 0;
 }
-body * {
-    transition: 0.3s;
+@media (prefers-reduced-motion: no-preference) {
+    body * {
+        transition: 0.3s;
+    }
 }
 h1,
 h2,
@@ -31,8 +33,12 @@ strong {
     font-weight: 500;
 }
 a {
+    text-decoration: underline;
+    color: #0c6b78;
+}
+a.nav-link,
+a.btn {
     text-decoration: none;
-    color: #17a2b8;
 }
 ul {
     list-style: none;
@@ -96,8 +102,9 @@ textarea {
     box-shadow: 17px 17px 61px 0px rgba(0, 0, 0, 0.75);
     margin-bottom: 5em;
 }
-#navigation a {
+nav a {
     color: var(--mainText);
+    text-decoration: none;
 }
 #profile_pic {
     height: 326px;
@@ -111,7 +118,7 @@ textarea {
 #light-mode {
     background-color: #fff;
 }
-#preview-shadow {
+.preview-shadow {
     background-image: url(../images/awesome.png);
     width: 330px;
     height: 320px;
@@ -119,42 +126,42 @@ textarea {
     padding-left: 30px;
     padding-top: 30px;
 }
-#preview {
+.preview-content {
     width: 330px;
     height: 330px;
-    border: 1.5px solid #17a2b8;
+    border: 1.5px solid #0c6b78;
     background-color: var(--previewBg);
     position: relative;
 }
-#preview-header,
-#preview-text {
+.preview-header,
+.preview-text {
     padding-top: 15px;
     padding-left: 20px;
 }
-#preview-text {
+.preview-text {
     font-size: 15px;
 }
 .corner {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    border: 1.5px solid #17a2b8;
+    border: 1.5px solid #0c6b78;
     background-color: #fff;
     position: absolute;
 }
-#corner-tl {
+.corner--tl {
     top: -5px;
     left: -5px;
 }
-#corner-tr {
+.corner--tr {
     top: -5px;
     right: -5px;
 }
-#corner-br {
+.corner--br {
     bottom: -5px;
     right: -5px;
 }
-#corner-bl {
+.corner--bl {
     bottom: -5px;
     left: -5px;
 }
@@ -181,7 +188,7 @@ textarea {
 
 #social_img {
     width: 100%;
-    border: 1.5px solid #17a2b8;
+    border: 1.5px solid #0c6b78;
     -webkit-box-shadow: 10px 10px 19px -2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 10px 10px 19px -2px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 19px -2px rgba(0, 0, 0, 0.75);
@@ -215,6 +222,37 @@ textarea {
     height: 5em;
     background-color: #eaeaea;
 }
+
+/* Skip navigation link */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 9999;
+    background: #fff;
+    color: #0c6b78;
+    padding: 8px 16px;
+    text-decoration: underline;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+/* Focus styles (WCAG 2.4.11) */
+:focus-visible {
+    outline: 3px solid #0c6b78;
+    outline-offset: 2px;
+}
+
+/* Contact list dividers via CSS instead of invalid <hr> in <ul> */
+.contact li {
+    border-bottom: 1px solid var(--borderColor);
+    padding: 6px 0;
+}
+.contact li:last-child {
+    border-bottom: none;
+}
+
 @media screen and (max-width: 1200px) {
     .main-container {
         width: 95%;
@@ -243,11 +281,11 @@ textarea {
         height: 225px;
         width: 225px;
     }
-    #preview {
+    .preview-content {
         height: 228px;
         width: 228px;
     }
-    #preview-shadow {
+    .preview-shadow {
         height: 228px;
         width: 228px;
     }

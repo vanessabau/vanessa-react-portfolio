@@ -16,7 +16,7 @@ class Portfolio extends Component<Record<string, never>, PortfolioState> {
 
   render() {
     return (
-      <section className="s1">
+      <section className="s1" aria-labelledby="portfolio-title">
         <div className="main-container">
           <div className="greeting-wrapper">
             <h1 id="portfolio-title">Portfolio</h1>
