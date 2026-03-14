@@ -1,96 +1,87 @@
 import { Link } from "react-router-dom";
 import clsx from "clsx";
 import BioPic from "../../components/bio-pic/index";
-import AboutText from "../../components/about-text/index";
 import styles from "./About.module.css";
 
-const AboutPage = () => {
-  return (
-    <>
-      <section className="s1" aria-labelledby="welcome-heading">
-        <div className="main-container">
-          <div className="greeting-wrapper" id="welcome-wrapper">
-            <h1 id="welcome-heading">Welcome, I'm Vanessa Bautista</h1>
-          </div>
-          <div className={clsx("intro-wrapper", styles.aboutIntroWrapper)}>
-            <div className={styles.leftColumn}>
-              <BioPic />
-            </div>
-            <div className={styles.rightColumn}>
-              <AboutText />
-            </div>
-          </div>
-        </div>
-      </section>
+const skills = [
+  "React", "TypeScript", "JavaScript", "Next.js", "Node.js",
+  "Module Federation", "Micro-Frontend Architecture", "Webpack / RushJS",
+  "AWS (Lambda, CloudWatch, S3)", "Datadog", "Akamai CDN",
+  "CI/CD (GitLab)", "Terraform", "Storybook", "Contentful", "GitHub Copilot Agents",
+];
 
-      <section className="s2" aria-labelledby="about-me-heading">
-        <div className="main-container">
-          <div className="about-wrapper">
-            <div className="about-me">
-              <h2 id="about-me-heading">About Me</h2>
-              <p>
-                Front End Platform Engineer with 5+ years of experience building
-                and scaling enterprise web applications at lululemon. Expert in
-                micro-frontend architecture, module federation, and React/Next.js
-                platforms — delivering large-scale migrations, observability
-                systems, and performance optimizations across 20+ engineering
-                teams.
-              </p>
-              <p>
-                I'm a technical leader who mentors engineers, drives Communities
-                of Practice, and builds AI-powered developer tooling. I take
-                end-to-end ownership of complex cross-stack initiatives with
-                measurable business impact — from reducing page load times by 39%
-                to stabilizing mission-critical applications to 95% uptime.
-              </p>
-              <hr />
-              <h3>Core Competencies</h3>
-              <a href="/vanessaBau-resume.pdf" target="_blank" rel="noreferrer">
-                View Resume
-              </a>
-              <p>
-                <Link to="/portfolio">View Portfolio</Link>
-              </p>
-              <div id="skills" aria-label="Technical skills">
-                <ul role="list">
-                  <li>React</li>
-                  <li>TypeScript</li>
-                  <li>JavaScript</li>
-                  <li>Next.js</li>
-                  <li>Node.js</li>
-                  <li>Module Federation</li>
-                  <li>Micro-Frontend Architecture</li>
-                  <li>Webpack / RushJS</li>
-                </ul>
-                <ul role="list">
-                  <li>AWS (Lambda, CloudWatch, S3)</li>
-                  <li>Datadog</li>
-                  <li>Akamai CDN</li>
-                  <li>CI/CD (GitLab)</li>
-                  <li>Terraform</li>
-                  <li>Storybook</li>
-                  <li>Contentful</li>
-                  <li>GitHub Copilot Agents</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="social-links">
-              <h2>Find me on YouTube</h2>
+const AboutPage = () => (
+  <>
+    <section className="s1" aria-labelledby="welcome-heading">
+      <div className="main-container">
+        <div className={clsx("intro-wrapper", styles.heroWrapper)}>
+          <div className={styles.heroText}>
+            <p className={styles.overline}>Software Engineer</p>
+            <h1 id="welcome-heading">Vanessa Bautista</h1>
+            <p className={styles.tagline}>
+              Front End Platform Engineer with 5+ years building enterprise
+              web at scale. Micro-frontends, design systems, observability.
+            </p>
+            <div className={styles.heroCtas}>
               <a
-                href="https://www.youtube.com/channel/UCJgiKl0JhapfuzCyylGHKbQ?view_as=subscriber"
+                href="/vanessaBau-resume.pdf"
                 target="_blank"
                 rel="noreferrer"
+                className={clsx(styles.ctaBtn, styles.ctaBtnPrimary)}
               >
-                <span>YouTube: Vanessa Bautista</span>
+                View Resume
               </a>
+              <Link
+                to="/portfolio"
+                className={clsx(styles.ctaBtn, styles.ctaBtnOutline)}
+              >
+                View Portfolio
+              </Link>
+            </div>
+            <div className={styles.heroSocialLinks}>
+              <a href="https://github.com/vanessabau" target="_blank" rel="noreferrer">GitHub</a>
+              <span aria-hidden="true">·</span>
+              <a href="https://www.linkedin.com/in/vanessa-bautista-45906b19b/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <span aria-hidden="true">·</span>
+              <a href="https://www.youtube.com/channel/UCJgiKl0JhapfuzCyylGHKbQ?view_as=subscriber" target="_blank" rel="noreferrer">YouTube</a>
             </div>
           </div>
+          <div className={styles.heroPhoto}>
+            <BioPic />
+          </div>
         </div>
-      </section>
-      <div className="color-bar"></div>
-    </>
-  );
-};
+      </div>
+    </section>
+
+    <section className="s2" aria-labelledby="about-me-heading">
+      <div className="main-container">
+        <div className={styles.aboutContent}>
+          <h2 id="about-me-heading">About Me</h2>
+          <p>
+            Front End Platform Engineer with 5+ years of experience building
+            and scaling enterprise web applications at lululemon. Expert in
+            micro-frontend architecture, module federation, and React/Next.js
+            platforms — delivering large-scale migrations, observability
+            systems, and performance optimizations across 20+ engineering
+            teams.
+          </p>
+          <p>
+            I'm a technical leader who mentors engineers, drives Communities
+            of Practice, and builds AI-powered developer tooling. I take
+            end-to-end ownership of complex cross-stack initiatives with
+            measurable business impact — from reducing page load times by 39%
+            to stabilizing mission-critical applications to 95% uptime.
+          </p>
+          <h3>Core Competencies</h3>
+          <div className={styles.skillsGrid} aria-label="Technical skills">
+            {skills.map((skill) => (
+              <span key={skill} className={styles.skillTag}>{skill}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  </>
+);
 
 export default AboutPage;
