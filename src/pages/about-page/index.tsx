@@ -39,15 +39,14 @@ const AboutPage = () => (
           <h2 id="about-me-heading">About</h2>
           <p>
             Front End Platform Engineer with 5+ years of experience building
-            and scaling enterprise web applications at lululemon. Expert in
+            and scaling enterprise web applications. Expert in
             micro-frontend architecture, module federation, and React/Next.js
             platforms — delivering large-scale migrations, observability
             systems, and performance optimizations across 20+ engineering
             teams.
           </p>
           <p>
-            I'm a technical leader who mentors engineers, drives Communities
-            of Practice, and builds AI-powered developer tooling. I take
+            I'm a technical leader who builds AI-powered developer tooling, drives Communities of Practice, and mentors engineers. I take
             end-to-end ownership of complex cross-stack initiatives with
             measurable business impact — from reducing page load times by 39%
             to stabilizing mission-critical applications to 95% uptime.
