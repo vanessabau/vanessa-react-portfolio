@@ -1,10 +1,15 @@
 .cardWrapper {
     background: #fff;
-    border-radius: 2px;
-    margin: 1rem;
+    border-radius: 8px;
+    margin: 0.75rem;
     width: 300px;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     text-align: left;
+}
+
+.cardWrapper:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
 }
 
 .cardBody {

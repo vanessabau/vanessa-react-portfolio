@@ -1,46 +1,100 @@
-.aboutIntroWrapper {
-    background-color: var(--secondaryColor);
+/* ─── Hero (intro section) ───────────────────────────────────── */
+
+.heroWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30em;
-    grid-template-areas: "left-column right-column";
-    padding-left: 100px;
+    align-items: center;
+    padding: 5rem 4rem;
+    gap: 4rem;
+    background-color: var(--secondaryColor);
 }
 
-.leftColumn {
-    grid-area: left-column;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.heroText {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.rightColumn {
-    grid-area: right-column;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.overline {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accentColor);
+    margin: 0;
 }
+
+.tagline {
+    font-size: 1rem;
+    color: var(--secondaryText);
+    line-height: 1.75;
+    margin: 0;
+}
+
+.heroCtas {
+    margin-top: 0.5rem;
+}
+
+.heroPhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ─── About content (single column) ─────────────────────────── */
+
+.aboutContent {
+    padding: 3rem 4rem;
+}
+
+.aboutContent h2 {
+    margin-top: 0;
+}
+
+.aboutContent h3 {
+    margin-top: 1.75rem;
+}
+
+.resumeCta {
+    margin-top: 1.5rem;
+}
+
+/* ─── Skill tag pills ────────────────────────────────────────── */
+
+.skillsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.skillTag {
+    display: inline-block;
+    padding: 0.3rem 0.85rem;
+    border-radius: 999px;
+    background-color: var(--mainColor);
+    border: 1px solid var(--borderColor);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--mainText);
+}
+
+/* ─── Responsive ─────────────────────────────────────────────── */
 
 @media screen and (max-width: 900px) {
-    .aboutIntroWrapper {
+    .heroWrapper {
         grid-template-columns: 1fr;
-        grid-template-rows: 30em;
-        grid-template-areas:
-            "left-column"
-            "right-column";
-        padding-left: 50px;
+        padding: 3rem 2rem;
+        gap: 2.5rem;
     }
-    .leftColumn {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-    .rightColumn {
-        padding-top: 25px;
-        padding-bottom: 50px;
+
+    .heroPhoto {
+        order: -1;
     }
 }
 
 @media screen and (max-width: 414px) {
-    .aboutIntroWrapper {
-        grid-template-rows: 20em;
-        padding-left: 50px;
+    .heroWrapper {
+        padding: 2rem 1.5rem;
     }
 }

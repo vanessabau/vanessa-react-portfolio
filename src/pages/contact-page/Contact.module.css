@@ -1,51 +1,82 @@
-.contactIntroWrapper {
+.subtitle {
+    color: var(--secondaryText);
+    font-size: 1rem;
+    margin-top: 0.25rem;
+}
+
+/* ─── Contact card grid ──────────────────────────────────────── */
+
+.contactCards {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.contactCard {
+    background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
-    border-radius: 5px 5px 0 0;
+    border-radius: 8px;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.connectBgImg {
-    position: relative;
-    object-fit: cover;
-    width: 100%;
-    border: 1px var(--borderColor);
-    border-radius: 5px 5px 0 0;
+.contactCard h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
 }
 
-.contentWrapper {
-    position: absolute;
-    z-index: 9;
+.contactCard p {
+    color: var(--secondaryText);
+    font-size: 0.9rem;
+    margin: 0;
 }
 
-.reachOut {
-    margin-top: 20px;
-    margin-left: 110px;
-    position: relative;
+.cardCta {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--accentColor);
+    text-decoration: none;
 }
 
-.contactList {
-    margin-top: 20px;
-    margin-left: 75px;
-    position: relative;
+.cardCta:hover {
+    text-decoration: underline;
 }
 
-.contactList li {
-    border-bottom: 1px solid var(--borderColor);
-    padding: 6px 0;
+/* ─── Secondary links row ────────────────────────────────────── */
+
+.secondaryLinks {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 4rem;
+    flex-wrap: wrap;
 }
 
-.contactList li:last-child {
-    border-bottom: none;
+.secondaryLinks a {
+    font-size: 0.9rem;
+    color: var(--secondaryText);
+    text-decoration: underline;
 }
 
-@media screen and (max-width: 800px) {
-    .contentWrapper {
-        font-size: 12px;
+.secondaryLinks a:hover {
+    color: var(--accentColor);
+}
+
+/* ─── Responsive ─────────────────────────────────────────────── */
+
+@media screen and (max-width: 768px) {
+    .contactCards {
+        grid-template-columns: 1fr;
     }
-    .contactIntroWrapper {
-        height: 350px;
-    }
-    .connectBgImg {
-        height: 350px;
+
+    .secondaryLinks {
+        flex-direction: column;
+        gap: 1rem;
     }
 }

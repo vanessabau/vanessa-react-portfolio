@@ -1,53 +1,66 @@
-import clsx from "clsx";
-import ConnectBk from "../../assets/images/connect-bk.png";
 import styles from "./Contact.module.css";
 
-const ContactPage = () => {
-  return (
-    <section className="s1" aria-labelledby="connect-heading">
-      <div className="main-container">
-        <div className="greeting-wrapper">
-          <h1 id="connect-heading">Connect</h1>
+const ContactPage = () => (
+  <section className="s1" aria-labelledby="connect-heading">
+    <div className="main-container">
+      <div className="greeting-wrapper">
+        <h1 id="connect-heading">Let's Connect</h1>
+        <p className={styles.subtitle}>Available for new opportunities</p>
+      </div>
+
+      <div className={styles.contactCards}>
+        <div className={styles.contactCard}>
+          <h3>GitHub</h3>
+          <p>github.com/vanessabau</p>
+          <a
+            href="https://github.com/vanessabau"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.cardCta}
+          >
+            View Profile →
+          </a>
         </div>
 
-        <div className={clsx("intro-wrapper", styles.contactIntroWrapper)}>
-          <img className={styles.connectBgImg} src={ConnectBk} alt="" />
+        <div className={styles.contactCard}>
+          <h3>LinkedIn</h3>
+          <p>vanessa-bautista</p>
+          <a
+            href="https://www.linkedin.com/in/vanessa-bautista-45906b19b/"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.cardCta}
+          >
+            Connect →
+          </a>
+        </div>
 
-          <div className={styles.contentWrapper}>
-            <h2 className={styles.reachOut} id="reach-out">Reach Out</h2>
-            <ul className={styles.contactList} role="list" aria-labelledby="reach-out">
-              <li>
-                <a href="/vanessaBau-resume.pdf" target="_blank" rel="noreferrer">
-                  Resume
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/vanessabau">Github</a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/vanessa-bautista-45906b19b/">
-                  Linkedin
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/channel/UCJgiKl0JhapfuzCyylGHKbQ?view_as=subscriber">
-                  Application demos on YouTube
-                </a>
-              </li>
-              <li>
-                <a href="mailto:vanessawebdev@gmail.com">
-                  Email: vanessawebdev@gmail.com
-                </a>
-              </li>
-              <li>
-                <a href="tel:9162254599">Phone: 916-225-4599</a>
-              </li>
-            </ul>
-          </div>
+        <div className={styles.contactCard}>
+          <h3>Email</h3>
+          <p>vanessawebdev@gmail.com</p>
+          <a
+            href="mailto:vanessawebdev@gmail.com"
+            className={styles.cardCta}
+          >
+            Email Me →
+          </a>
         </div>
       </div>
-    </section>
-  );
-};
+
+      <div className={styles.secondaryLinks}>
+        <a href="/vanessaBau-resume.pdf" target="_blank" rel="noreferrer">
+          Download Resume
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCJgiKl0JhapfuzCyylGHKbQ?view_as=subscriber"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Application demos on YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+);
 
 export default ContactPage;

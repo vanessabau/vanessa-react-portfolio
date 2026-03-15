@@ -3,10 +3,10 @@ import AboutText from './index';
 
 test('renders heading', () => {
   render(<AboutText />);
-  expect(screen.getByRole('heading', { name: 'Full Stack Awesomeness' })).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: 'Front End Platform Engineer' })).toBeInTheDocument();
 });
 
 test('renders tagline text', () => {
   render(<AboutText />);
-  expect(screen.getByText(/I love to build web applications/)).toBeInTheDocument();
+  expect(screen.getByText(/5\+ years building enterprise web at scale/)).toBeInTheDocument();
 });
