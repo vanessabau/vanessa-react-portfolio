@@ -46,10 +46,7 @@ const AboutPage = () => (
             teams.
           </p>
           <p>
-            I'm a technical leader who builds AI-powered developer tooling, drives Communities of Practice, and mentors engineers. I take
-            end-to-end ownership of complex cross-stack initiatives with
-            measurable business impact — from reducing page load times by 39%
-            to stabilizing mission-critical applications to 95% uptime.
+            I'm a technical leader who takes end-to-end ownership of complex cross-stack initiatives — modernizing legacy architectures, stabilizing mission-critical systems, and building AI-powered automations that improve developer experience and business outcomes, while mentoring engineers and fostering technical leadership across teams.
           </p>
           <h3>Core Competencies</h3>
           <div className={styles.skillsGrid} aria-label="Technical skills">
