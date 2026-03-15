@@ -41,8 +41,7 @@ const AboutPage = () => (
             Front End Platform Engineer with 5+ years of experience building
             and scaling enterprise web applications. Expert in
             micro-frontend architecture, module federation, and React/Next.js
-            platforms — delivering large-scale migrations, observability
-            systems, and performance optimizations across 20+ engineering
+            platforms — delivering large-scale migrations, observability, design systems, and performance optimizations across 20+ engineering
             teams.
           </p>
           <p>
