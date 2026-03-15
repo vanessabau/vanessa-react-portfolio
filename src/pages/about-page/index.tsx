@@ -36,7 +36,7 @@ const AboutPage = () => (
     <section className="s2" aria-labelledby="about-me-heading">
       <div className="main-container">
         <div className={styles.aboutContent}>
-          <h2 id="about-me-heading">About Me</h2>
+          <h2 id="about-me-heading">About</h2>
           <p>
             Front End Platform Engineer with 5+ years of experience building
             and scaling enterprise web applications at lululemon. Expert in
