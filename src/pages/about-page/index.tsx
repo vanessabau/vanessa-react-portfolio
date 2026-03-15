@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
 import clsx from "clsx";
 import BioPic from "../../components/bio-pic/index";
+import ProfileCtas from "../../components/profile-ctas/index";
 import styles from "./About.module.css";
 
 const skills = [
@@ -23,27 +23,7 @@ const AboutPage = () => (
               web at scale. Micro-frontends, design systems, observability.
             </p>
             <div className={styles.heroCtas}>
-              <a
-                href="/vanessaBau-resume.pdf"
-                target="_blank"
-                rel="noreferrer"
-                className={clsx(styles.ctaBtn, styles.ctaBtnPrimary)}
-              >
-                View Resume
-              </a>
-              <Link
-                to="/portfolio"
-                className={clsx(styles.ctaBtn, styles.ctaBtnOutline)}
-              >
-                View Portfolio
-              </Link>
-            </div>
-            <div className={styles.heroSocialLinks}>
-              <a href="https://github.com/vanessabau" target="_blank" rel="noreferrer">GitHub</a>
-              <span aria-hidden="true">·</span>
-              <a href="https://www.linkedin.com/in/vanessa-bautista-45906b19b/" target="_blank" rel="noreferrer">LinkedIn</a>
-              <span aria-hidden="true">·</span>
-              <a href="https://www.youtube.com/channel/UCJgiKl0JhapfuzCyylGHKbQ?view_as=subscriber" target="_blank" rel="noreferrer">YouTube</a>
+              <ProfileCtas />
             </div>
           </div>
           <div className={styles.heroPhoto}>
@@ -77,6 +57,10 @@ const AboutPage = () => (
             {skills.map((skill) => (
               <span key={skill} className={styles.skillTag}>{skill}</span>
             ))}
+          </div>
+          <h3>Let's Connect</h3>
+          <div className={styles.resumeCta}>
+            <ProfileCtas />
           </div>
         </div>
       </div>

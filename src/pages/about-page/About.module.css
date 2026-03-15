@@ -32,64 +32,13 @@
 }
 
 .heroCtas {
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
     margin-top: 0.5rem;
-}
-
-.ctaBtn {
-    display: inline-block;
-    padding: 0.65rem 1.5rem;
-    border-radius: 4px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 0.875rem;
-    text-decoration: none;
-    letter-spacing: 0.01em;
-    cursor: pointer;
-}
-
-.ctaBtnPrimary {
-    background-color: var(--accentColor);
-    color: #fff;
-    border: 2px solid var(--accentColor);
-}
-
-.ctaBtnPrimary:hover {
-    background-color: transparent;
-    color: var(--accentColor);
-}
-
-.ctaBtnOutline {
-    background-color: transparent;
-    color: var(--mainText);
-    border: 2px solid var(--borderColor);
-}
-
-.ctaBtnOutline:hover {
-    border-color: var(--mainText);
-    color: var(--mainText);
 }
 
 .heroPhoto {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* ─── Social links row in hero ───────────────────────────────── */
-
-.heroSocialLinks {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    margin-top: 0.25rem;
-}
-
-.heroSocialLinks span {
-    color: var(--borderColor);
 }
 
 /* ─── About content (single column) ─────────────────────────── */
@@ -100,6 +49,14 @@
 
 .aboutContent h2 {
     margin-top: 0;
+}
+
+.aboutContent h3 {
+    margin-top: 1.75rem;
+}
+
+.resumeCta {
+    margin-top: 1.5rem;
 }
 
 /* ─── Skill tag pills ────────────────────────────────────────── */
