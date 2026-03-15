@@ -20,7 +20,7 @@ const AboutPage = () => (
             <h1 id="welcome-heading">Vanessa Bautista</h1>
             <p className={styles.tagline}>
               Front End Platform Engineer with 5+ years building enterprise
-              web at scale. Micro-frontends, design systems, observability.
+              web at scale. Micro-frontends, AI-tooling, observability, accessible design systems.
             </p>
             <div className={styles.heroCtas}>
               <ProfileCtas />
